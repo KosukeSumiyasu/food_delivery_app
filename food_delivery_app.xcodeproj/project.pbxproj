@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1A12A225B1B36100B7D233 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12A125B1B36100B7D233 /* LoginViewController.swift */; };
+		3F1A12A525B1B3B000B7D233 /* LoginFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */; };
+		3F1A12A825B1B3CD00B7D233 /* LoginSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */; };
+		3F1A12AB25B1C1E500B7D233 /* extention_file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12AA25B1C1E500B7D233 /* extention_file.swift */; };
 		3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81EC9F25B17366007A0BBB /* AppDelegate.swift */; };
 		3F81ECA225B17366007A0BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA125B17366007A0BBB /* SceneDelegate.swift */; };
 		3F81ECA425B17366007A0BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA325B17366007A0BBB /* ViewController.swift */; };
@@ -14,9 +18,14 @@
 		3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA825B17366007A0BBB /* food_delivery_app.xcdatamodeld */; };
 		3F81ECAC25B1736B007A0BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECAB25B1736B007A0BBB /* Assets.xcassets */; };
 		3F81ECAF25B1736B007A0BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECAD25B1736B007A0BBB /* LaunchScreen.storyboard */; };
+		921BCFC3D094DD8EF6D9CA9D /* Pods_food_delivery_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68728317A02987BA2C34ED3 /* Pods_food_delivery_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1A12A125B1B36100B7D233 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirstViewController.swift; sourceTree = "<group>"; };
+		3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSecondViewController.swift; sourceTree = "<group>"; };
+		3F1A12AA25B1C1E500B7D233 /* extention_file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention_file.swift; sourceTree = "<group>"; };
 		3F81EC9C25B17366007A0BBB /* food_delivery_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = food_delivery_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F81EC9F25B17366007A0BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F81ECA125B17366007A0BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,9 @@
 		3F81ECAB25B1736B007A0BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F81ECAE25B1736B007A0BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F81ECB025B1736B007A0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF07FD8978602BCAD6945E6 /* Pods-food_delivery_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.release.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.release.xcconfig"; sourceTree = "<group>"; };
+		E5E088D48B1707766E4A10E4 /* Pods-food_delivery_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.debug.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.debug.xcconfig"; sourceTree = "<group>"; };
+		E68728317A02987BA2C34ED3 /* Pods_food_delivery_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_delivery_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921BCFC3D094DD8EF6D9CA9D /* Pods_food_delivery_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0004939BA1C82AF40AA08BB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5E088D48B1707766E4A10E4 /* Pods-food_delivery_app.debug.xcconfig */,
+				ACF07FD8978602BCAD6945E6 /* Pods-food_delivery_app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B96DDA6DDE70488D71A0C71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E68728317A02987BA2C34ED3 /* Pods_food_delivery_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F81EC9325B17366007A0BBB = {
 			isa = PBXGroup;
 			children = (
 				3F81EC9E25B17366007A0BBB /* food_delivery_app */,
 				3F81EC9D25B17366007A0BBB /* Products */,
+				0004939BA1C82AF40AA08BB3 /* Pods */,
+				1B96DDA6DDE70488D71A0C71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +98,10 @@
 				3F81ECAD25B1736B007A0BBB /* LaunchScreen.storyboard */,
 				3F81ECB025B1736B007A0BBB /* Info.plist */,
 				3F81ECA825B17366007A0BBB /* food_delivery_app.xcdatamodeld */,
+				3F1A12A125B1B36100B7D233 /* LoginViewController.swift */,
+				3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */,
+				3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */,
+				3F1A12AA25B1C1E500B7D233 /* extention_file.swift */,
 			);
 			path = food_delivery_app;
 			sourceTree = "<group>";
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F81ECB325B1736B007A0BBB /* Build configuration list for PBXNativeTarget "food_delivery_app" */;
 			buildPhases = (
+				E6DC82CE2480F4537E5D931C /* [CP] Check Pods Manifest.lock */,
 				3F81EC9825B17366007A0BBB /* Sources */,
 				3F81EC9925B17366007A0BBB /* Frameworks */,
 				3F81EC9A25B17366007A0BBB /* Resources */,
+				3B3059065CA88A1B06CD93BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,15 +173,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B3059065CA88A1B06CD93BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6DC82CE2480F4537E5D931C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-food_delivery_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F81EC9825B17366007A0BBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3F81ECA425B17366007A0BBB /* ViewController.swift in Sources */,
+				3F1A12A525B1B3B000B7D233 /* LoginFirstViewController.swift in Sources */,
 				3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */,
 				3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */,
+				3F1A12AB25B1C1E500B7D233 /* extention_file.swift in Sources */,
+				3F1A12A225B1B36100B7D233 /* LoginViewController.swift in Sources */,
 				3F81ECA225B17366007A0BBB /* SceneDelegate.swift in Sources */,
+				3F1A12A825B1B3CD00B7D233 /* LoginSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +371,7 @@
 		};
 		3F81ECB425B1736B007A0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E088D48B1707766E4A10E4 /* Pods-food_delivery_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +390,7 @@
 		};
 		3F81ECB525B1736B007A0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF07FD8978602BCAD6945E6 /* Pods-food_delivery_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
