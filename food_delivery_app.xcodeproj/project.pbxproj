@@ -11,6 +11,7 @@
 		3F1A12A525B1B3B000B7D233 /* LoginFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */; };
 		3F1A12A825B1B3CD00B7D233 /* LoginSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */; };
 		3F1A12AB25B1C1E500B7D233 /* extention_file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12AA25B1C1E500B7D233 /* extention_file.swift */; };
+		3F1A12B125B528CF00B7D233 /* FoodInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12B025B528CF00B7D233 /* FoodInfoViewController.swift */; };
 		3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81EC9F25B17366007A0BBB /* AppDelegate.swift */; };
 		3F81ECA225B17366007A0BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA125B17366007A0BBB /* SceneDelegate.swift */; };
 		3F81ECA425B17366007A0BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA325B17366007A0BBB /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFirstViewController.swift; sourceTree = "<group>"; };
 		3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSecondViewController.swift; sourceTree = "<group>"; };
 		3F1A12AA25B1C1E500B7D233 /* extention_file.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extention_file.swift; sourceTree = "<group>"; };
+		3F1A12B025B528CF00B7D233 /* FoodInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfoViewController.swift; sourceTree = "<group>"; };
 		3F81EC9C25B17366007A0BBB /* food_delivery_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = food_delivery_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F81EC9F25B17366007A0BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F81ECA125B17366007A0BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */,
 				3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */,
 				3F1A12AA25B1C1E500B7D233 /* extention_file.swift */,
+				3F1A12B025B528CF00B7D233 /* FoodInfoViewController.swift */,
 			);
 			path = food_delivery_app;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */,
 				3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */,
 				3F1A12AB25B1C1E500B7D233 /* extention_file.swift in Sources */,
+				3F1A12B125B528CF00B7D233 /* FoodInfoViewController.swift in Sources */,
 				3F1A12A225B1B36100B7D233 /* LoginViewController.swift in Sources */,
 				3F81ECA225B17366007A0BBB /* SceneDelegate.swift in Sources */,
 				3F1A12A825B1B3CD00B7D233 /* LoginSecondViewController.swift in Sources */,
