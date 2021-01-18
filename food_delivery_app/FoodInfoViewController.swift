@@ -11,7 +11,12 @@ import UIKit
 
 class FoodInfoViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
 
-    @IBOutlet weak var food_collectionView: UICollectionView!
+    @IBOutlet weak var food_collectionView: UICollectionView! {
+        didSet {
+            food_collectionView.register(UINib(nibName: "FoodCollectionViewCell", bundle: nil),
+                                         forCellWithReuseIdentifier: "FoodCollectionViewCell")
+        }
+    }
 
     
     let food_img = ["food1","food2","food3","food4",]
@@ -19,29 +24,18 @@ class FoodInfoViewController: UIViewController, UICollectionViewDataSource,UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         // セルの登録
-        food_collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal // 横スクロール
-        let size = food_collectionView.frame.height
-        layout.itemSize = CGSize(width: size, height: size)
-        food_collectionView.collectionViewLayout = layout
+//        let layout = UICollectionViewFlowLayout()
+//        food_collectionView.collectionViewLayout = layout
     }
     // セルを返す
     func collectionView(_ food_collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let testcell:UICollectionViewCell = food_collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-//        print(testcell.contentView.viewWithTag(1) as Any)
-//        let imageView = testcell.contentView.viewWithTag(1) as! UIImageView
-        
-        let imageView = UIImage(named: "food1")
-        
+        guard let foodCell = food_collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCollectionViewCell",
+                                                                     for: indexPath) as? FoodCollectionViewCell else {
+            return UICollectionViewCell()
+        }
 
-        let cellImage = UIImage(named: food_img[indexPath.row])
-        // UIImageをUIImageViewのimageとして設定
-        testcell.backgroundimage = imageView
-        
-        testcell.backgroundColor = UIColor.blue
-
-        return testcell
+        foodCell.imageView.image = UIImage(named: food_img[indexPath.row])
+        return foodCell
     }
 
     // セル数を返す(UITableViewでいうところの"tableView:numberOfRowsInSection:"

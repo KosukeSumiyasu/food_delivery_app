@@ -151,42 +151,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="food_collectionView" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-90-ALT">
-                                <rect key="frame" x="3.5" y="124.5" width="406" height="269"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="food_collectionView" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-90-ALT">
+                                <rect key="frame" x="87" y="124" width="240" height="240"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="269.08999999999997" id="dsX-lx-N2X"/>
-                                    <constraint firstAttribute="width" constant="405.73000000000002" id="vDQ-Ra-7o4"/>
+                                    <constraint firstAttribute="height" constant="240" id="G3d-Nd-eNA"/>
+                                    <constraint firstAttribute="width" constant="240" id="Zy7-YU-VMJ"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GKZ-IO-P5Q">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <inset key="scrollIndicatorInsets" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="GKZ-IO-P5Q">
+                                    <size key="itemSize" width="240" height="240"/>
+                                    <size key="estimatedItemSize" width="240" height="240"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="bMV-pB-DOq">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UZW-Cc-AZd">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xfZ-UH-gAk">
-                                                    <rect key="frame" x="86" y="14" width="241" height="241"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="241.21000000000001" id="1q2-Vx-0Q5"/>
-                                                        <constraint firstAttribute="height" constant="241.21000000000001" id="wUo-ON-Qeu"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="xfZ-UH-gAk" firstAttribute="leading" secondItem="UZW-Cc-AZd" secondAttribute="leading" constant="86" id="912-n5-ODc"/>
-                                                <constraint firstItem="xfZ-UH-gAk" firstAttribute="top" secondItem="UZW-Cc-AZd" secondAttribute="top" constant="13.94" id="xqm-5E-ugh"/>
-                                            </constraints>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <connections>
                                     <outlet property="dataSource" destination="Xr7-uA-y46" id="EeB-O0-Te8"/>
                                     <outlet property="delegate" destination="Xr7-uA-y46" id="We7-eN-wIb"/>
@@ -196,8 +176,8 @@
                         <viewLayoutGuide key="safeArea" id="kVD-82-FIp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="P9r-90-ALT" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="80.599999999999994" id="R1n-Mr-cSI"/>
-                            <constraint firstItem="P9r-90-ALT" firstAttribute="leading" secondItem="kVD-82-FIp" secondAttribute="leading" constant="3.7400000000000002" id="iv5-F4-ZB5"/>
+                            <constraint firstItem="P9r-90-ALT" firstAttribute="centerX" secondItem="Bcg-Og-AbQ" secondAttribute="centerX" id="KhA-r9-fh3"/>
+                            <constraint firstItem="P9r-90-ALT" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="80" id="nNz-aI-sAg"/>
                         </constraints>
                     </view>
                     <connections>
