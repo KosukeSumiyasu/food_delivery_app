@@ -6,16 +6,13 @@
 //
 
 import UIKit
-import XLPagerTabStrip
 
 
-class LoginFirstViewController: UIViewController, IndicatorInfoProvider {
+class LoginFirstViewController: UIViewController {
 
 
     @IBOutlet weak var login_mail_textform1: UITextField!
     @IBOutlet weak var login_passward_textform1: UITextField!
-    //ここがボタンのタイトルに利用されます
-    var itemInfo: IndicatorInfo = "Login"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +21,5 @@ class LoginFirstViewController: UIViewController, IndicatorInfoProvider {
         
         login_passward_textform1.placeholder = "Password"
         login_passward_textform1.addBorderBottom(height: 1.0, color: UIColor.lightGray)
-    }
-
-    //必須
-    func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        return itemInfo
     }
 }
