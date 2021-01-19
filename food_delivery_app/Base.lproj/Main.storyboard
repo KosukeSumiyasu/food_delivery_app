@@ -172,14 +172,125 @@
                                     <outlet property="delegate" destination="Xr7-uA-y46" id="We7-eN-wIb"/>
                                 </connections>
                             </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-RJ-YKa">
+                                <rect key="frame" x="53" y="470" width="297" height="388"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sL4-9C-hNn">
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="286"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="NJY-TL-gxS">
+                                                <rect key="frame" x="0.0" y="0.0" width="297" height="69"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veggier tomato mix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDm-Wi-AtO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="297" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N1,900" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUQ-g5-2Sb">
+                                                        <rect key="frame" x="0.0" y="42.5" width="297" height="26.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                        <color key="textColor" red="0.98186761140000001" green="0.29078084230000001" blue="0.051897503439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="z8p-9r-HeM">
+                                                <rect key="frame" x="0.0" y="99" width="297" height="187"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vhM-Rz-dsm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="297" height="60.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR2-Bm-0YO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="297" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deliverd between monday aug and thursday 20 from 8pm to 91:32" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCx-WI-KaB">
+                                                                <rect key="frame" x="0.0" y="24.5" width="297" height="36"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="PsQ-7o-37u"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" red="0.56858557460000003" green="0.56866812710000003" blue="0.56855958699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="zPU-UL-vue">
+                                                        <rect key="frame" x="0.0" y="90.5" width="297" height="96.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHa-T4-OgQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="297" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLg-36-Sex">
+                                                                <rect key="frame" x="0.0" y="24.5" width="297" height="72"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="297" id="4ve-Dp-U0b"/>
+                                                                </constraints>
+                                                                <string key="text">All our foods are double checked before leaving our stores so by any case you found a broken food please contact our hotline immediately</string>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" red="0.56858557460000003" green="0.56866812710000003" blue="0.56855958699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8i-mk-79u">
+                                        <rect key="frame" x="0.0" y="318" width="297" height="70"/>
+                                        <color key="backgroundColor" red="0.98186761140000001" green="0.29078084230000001" blue="0.051897503439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="OFg-lV-k7a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="ADD to cart">
+                                            <color key="titleColor" red="0.9489335418" green="0.94906646009999995" blue="0.94889169929999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGe-1e-85V">
+                                <rect key="frame" x="41" y="104" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Dhi-1P-VNP"/>
+                                    <constraint firstAttribute="height" constant="24" id="ku4-tw-2Uj"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="chevron-left"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DGl-qo-vbu">
+                                <rect key="frame" x="340" y="105" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Dgj-LT-aEZ"/>
+                                    <constraint firstAttribute="width" constant="20" id="bWh-uh-hmq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="heart"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kVD-82-FIp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="w5w-RJ-YKa" firstAttribute="leading" secondItem="kVD-82-FIp" secondAttribute="leading" constant="53" id="7cW-eU-ars"/>
+                            <constraint firstItem="wGe-1e-85V" firstAttribute="leading" secondItem="kVD-82-FIp" secondAttribute="leading" constant="41" id="Jef-u8-whX"/>
+                            <constraint firstItem="w5w-RJ-YKa" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="426" id="KHt-yX-vel"/>
                             <constraint firstItem="P9r-90-ALT" firstAttribute="centerX" secondItem="Bcg-Og-AbQ" secondAttribute="centerX" id="KhA-r9-fh3"/>
+                            <constraint firstItem="wGe-1e-85V" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="60" id="MvQ-uh-Kew"/>
+                            <constraint firstItem="DGl-qo-vbu" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="61" id="X0f-0b-tvj"/>
+                            <constraint firstItem="kVD-82-FIp" firstAttribute="trailing" secondItem="w5w-RJ-YKa" secondAttribute="trailing" constant="64" id="XWK-Bi-pJ6"/>
                             <constraint firstItem="P9r-90-ALT" firstAttribute="top" secondItem="kVD-82-FIp" secondAttribute="top" constant="80" id="nNz-aI-sAg"/>
+                            <constraint firstItem="kVD-82-FIp" firstAttribute="trailing" secondItem="DGl-qo-vbu" secondAttribute="trailing" constant="54" id="pkk-WQ-DvW"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="food_collectionView" destination="P9r-90-ALT" id="lur-DJ-71o"/>
                     </connections>
@@ -191,7 +302,7 @@
         <!--Login View Controller-->
         <scene sceneID="ZHP-fT-Ptm">
             <objects>
-                <viewController id="4tO-Uz-tZ9" customClass="LoginViewController" customModule="food_delivery_app" sceneMemberID="viewController">
+                <viewController id="4tO-Uz-tZ9" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kSD-Mr-aYL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,9 +358,6 @@
                             <constraint firstItem="nen-9T-fNx" firstAttribute="bottom" secondItem="0zb-2g-dMr" secondAttribute="bottom" id="TfQ-bV-Mtp"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="containerView" destination="0zb-2g-dMr" id="UhX-JR-qON"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXI-LU-uv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,6 +499,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron-left" width="24" height="24"/>
+        <image name="heart" width="20" height="20"/>
         <image name="logo" width="150" height="163"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

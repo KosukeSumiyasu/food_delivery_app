@@ -30,7 +30,7 @@ class FoodInfoViewController: UIViewController, UICollectionViewDataSource,UICol
     // セルを返す
     func collectionView(_ food_collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let foodCell = food_collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCollectionViewCell",
-                                                                     for: indexPath) as? FoodCollectionViewCell else {
+             for: indexPath) as? FoodCollectionViewCell else {
             return UICollectionViewCell()
         }
 

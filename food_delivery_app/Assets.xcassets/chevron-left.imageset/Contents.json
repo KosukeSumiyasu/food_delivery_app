@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "image 2.pdf",
+      "filename" : "chevron-left.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "image 2@2x.pdf",
+      "filename" : "chevron-left@2x.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "image 2@3x.pdf",
+      "filename" : "chevron-left@3x.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
