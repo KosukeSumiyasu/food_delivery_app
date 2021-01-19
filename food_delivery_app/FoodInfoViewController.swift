@@ -11,7 +11,10 @@ import UIKit
 
 class FoodInfoViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate {
 
-    @IBOutlet weak var food_collectionView: UICollectionView! {
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var food_collectionView:
+        
+        UICollectionView! {
         didSet {
             food_collectionView.register(UINib(nibName: "FoodCollectionViewCell", bundle: nil),
                                          forCellWithReuseIdentifier: "FoodCollectionViewCell")
@@ -40,6 +43,18 @@ class FoodInfoViewController: UIViewController, UICollectionViewDataSource,UICol
 
     // セル数を返す(UITableViewでいうところの"tableView:numberOfRowsInSection:"
     func collectionView(_ food_collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        let count = food_img.count
+        pageControl.numberOfPages = count
+        pageControl.isHidden = !(count > 1)
         return food_img.count;
     }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pageControl?.currentPage = Int(scrollView.contentOffset.x)/Int(scrollView.frame.width)
+        
+    }
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        pageControl?.currentPage = Int(scrollView.contentOffset.x)/Int(scrollView.frame.width)
+        
+    }
+
 }

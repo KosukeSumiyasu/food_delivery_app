@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA825B17366007A0BBB /* food_delivery_app.xcdatamodeld */; };
 		3F81ECAC25B1736B007A0BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECAB25B1736B007A0BBB /* Assets.xcassets */; };
 		3F81ECAF25B1736B007A0BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECAD25B1736B007A0BBB /* LaunchScreen.storyboard */; };
+		693113DCF68956A8DD2A7C28 /* Pods_food_delivery_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303364ADE115C321649B6A8 /* Pods_food_delivery_app.framework */; };
 		C3BAF10125B551330074A8AB /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAF0FF25B551330074A8AB /* FoodCollectionViewCell.swift */; };
 		C3BAF10225B551330074A8AB /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BAF10025B551330074A8AB /* FoodCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,9 @@
 		3F81ECAB25B1736B007A0BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F81ECAE25B1736B007A0BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F81ECB025B1736B007A0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70FD5C5F0613CE2ADBC73515 /* Pods-food_delivery_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.debug.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.debug.xcconfig"; sourceTree = "<group>"; };
+		9303364ADE115C321649B6A8 /* Pods_food_delivery_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_delivery_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F4EE7EF30F7EBDCC0043FA5 /* Pods-food_delivery_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.release.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.release.xcconfig"; sourceTree = "<group>"; };
 		C3BAF0FF25B551330074A8AB /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		C3BAF10025B551330074A8AB /* FoodCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				693113DCF68956A8DD2A7C28 /* Pods_food_delivery_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EEE4623A2082E541CF76F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9303364ADE115C321649B6A8 /* Pods_food_delivery_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3F81EC9325B17366007A0BBB = {
 			isa = PBXGroup;
 			children = (
 				3F81EC9E25B17366007A0BBB /* food_delivery_app */,
 				3F81EC9D25B17366007A0BBB /* Products */,
+				BB4464AB2FC5AFEE6778DD4F /* Pods */,
+				0EEE4623A2082E541CF76F8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +89,7 @@
 				3F81EC9F25B17366007A0BBB /* AppDelegate.swift */,
 				3F81ECA125B17366007A0BBB /* SceneDelegate.swift */,
 				3F81ECA325B17366007A0BBB /* ViewController.swift */,
+				3F1A12B025B528CF00B7D233 /* FoodInfoViewController.swift */,
 				3F81ECA525B17366007A0BBB /* Main.storyboard */,
 				3F81ECAB25B1736B007A0BBB /* Assets.xcassets */,
 				3F81ECAD25B1736B007A0BBB /* LaunchScreen.storyboard */,
@@ -82,9 +98,17 @@
 				3F1A12A125B1B36100B7D233 /* LoginViewController.swift */,
 				3F1A12A425B1B3B000B7D233 /* LoginFirstViewController.swift */,
 				3F1A12A725B1B3CD00B7D233 /* LoginSecondViewController.swift */,
-				3F1A12B025B528CF00B7D233 /* FoodInfoViewController.swift */,
 			);
 			path = food_delivery_app;
+			sourceTree = "<group>";
+		};
+		BB4464AB2FC5AFEE6778DD4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70FD5C5F0613CE2ADBC73515 /* Pods-food_delivery_app.debug.xcconfig */,
+				9F4EE7EF30F7EBDCC0043FA5 /* Pods-food_delivery_app.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		C3BAF0FE25B551030074A8AB /* View */ = {
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F81ECB325B1736B007A0BBB /* Build configuration list for PBXNativeTarget "food_delivery_app" */;
 			buildPhases = (
+				393B2A80B46CA93B121F75B2 /* [CP] Check Pods Manifest.lock */,
 				3F81EC9825B17366007A0BBB /* Sources */,
 				3F81EC9925B17366007A0BBB /* Frameworks */,
 				3F81EC9A25B17366007A0BBB /* Resources */,
+				8BB5DDD6EF84E68ED9EA5FCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		393B2A80B46CA93B121F75B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-food_delivery_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BB5DDD6EF84E68ED9EA5FCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F81EC9825B17366007A0BBB /* Sources */ = {
@@ -319,6 +387,7 @@
 		};
 		3F81ECB425B1736B007A0BBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70FD5C5F0613CE2ADBC73515 /* Pods-food_delivery_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -337,6 +406,7 @@
 		};
 		3F81ECB525B1736B007A0BBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F4EE7EF30F7EBDCC0043FA5 /* Pods-food_delivery_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
