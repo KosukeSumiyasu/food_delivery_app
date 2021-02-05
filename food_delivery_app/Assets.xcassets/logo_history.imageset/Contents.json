@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ic_sharp-history.svg",
+      "filename" : "Vector.svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ic_sharp-history@2x.svg",
+      "filename" : "Vector@2x.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "ic_sharp-history@3x.svg",
+      "filename" : "Vector@3x.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

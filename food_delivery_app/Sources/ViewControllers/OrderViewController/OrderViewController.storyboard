@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HjQ-7c-mhY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="2r6-tB-FFx">
+            <objects>
+                <viewController id="HjQ-7c-mhY" customClass="OrderViewController" customModule="food_delivery_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iuR-0E-Mlg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_cart2" translatesAutoresizingMaskIntoConstraints="NO" id="YKr-Ty-rLn">
+                                <rect key="frame" x="154" y="279" width="106.5" height="118.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106.5" id="6dW-Ur-BDB"/>
+                                    <constraint firstAttribute="height" constant="118.33" id="ZrD-29-7Cx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No orders yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGM-Es-kqX">
+                                <rect key="frame" x="122" y="423.5" width="170" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit the orange button down below to Create an order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v6-bt-zU7">
+                                <rect key="frame" x="97" y="474.5" width="220" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="BSO-Rr-IDk"/>
+                                    <constraint firstAttribute="height" constant="41" id="WTs-fa-hjH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.41206312179999999" green="0.41148108239999998" blue="0.4199552238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dad-td-47u">
+                                <rect key="frame" x="50" y="725.5" width="314" height="70"/>
+                                <color key="backgroundColor" red="0.98186761140000001" green="0.29078084230000001" blue="0.051897503439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="CQk-7X-OIu"/>
+                                    <constraint firstAttribute="width" constant="314" id="cLn-UR-ZfP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Start odering">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vab-U8-qn8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dad-td-47u" firstAttribute="centerX" secondItem="iuR-0E-Mlg" secondAttribute="centerX" id="A96-91-cCA"/>
+                            <constraint firstItem="YKr-Ty-rLn" firstAttribute="centerX" secondItem="iuR-0E-Mlg" secondAttribute="centerX" id="K4b-OA-qTs"/>
+                            <constraint firstItem="1v6-bt-zU7" firstAttribute="top" secondItem="lGM-Es-kqX" secondAttribute="bottom" constant="17" id="KUe-fg-Emt"/>
+                            <constraint firstItem="YKr-Ty-rLn" firstAttribute="top" secondItem="iuR-0E-Mlg" secondAttribute="top" constant="279" id="W3Q-Fb-Ngn"/>
+                            <constraint firstItem="Dad-td-47u" firstAttribute="top" secondItem="1v6-bt-zU7" secondAttribute="bottom" constant="210" id="hAK-9X-J6r"/>
+                            <constraint firstItem="lGM-Es-kqX" firstAttribute="centerX" secondItem="iuR-0E-Mlg" secondAttribute="centerX" id="hLq-pJ-QhH"/>
+                            <constraint firstItem="lGM-Es-kqX" firstAttribute="top" secondItem="YKr-Ty-rLn" secondAttribute="bottom" constant="26" id="i2v-u7-0WI"/>
+                            <constraint firstItem="1v6-bt-zU7" firstAttribute="centerX" secondItem="iuR-0E-Mlg" secondAttribute="centerX" id="q3r-5E-waF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="fN1-Vp-bLr">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron-left" style="plain" id="yK6-fb-rzc"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ls-wZ-Ib7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398.55072463768118" y="3305.3571428571427"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron-left" width="24" height="24"/>
+        <image name="logo_cart2" width="134" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

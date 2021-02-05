@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="jtr-vm-m0T">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="Wjv-BQ-SOb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kxY-wq-Xon">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FjR-vL-UNI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="logo_heart" selectedImage="logo_heart" id="It8-rJ-Zng"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ka-t3-w9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="1787"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OSw-PN-yk0">
+            <objects>
+                <viewController id="3tr-NP-xAm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbi-7P-IUz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yXi-hC-OEG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="logo_history" selectedImage="logo_history" id="pWe-14-WnI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8q-fI-ssS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="3306"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JnP-wV-Frt">
+            <objects>
+                <viewController id="ync-EF-CRG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L5k-Hg-7zC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wM8-Kt-IaM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="logo_user" selectedImage="logo_user" id="D5K-4i-1PA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrd-hX-LeY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="2515"/>
+        </scene>
+        <!--Navigation Bar Controller-->
+        <scene sceneID="3JL-BR-f3K">
+            <objects>
+                <viewController id="Fqi-le-WrN" customClass="NavigationBarController" customModule="food_delivery_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IK6-BN-fqh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="aRT-hd-9gk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nSn-qr-cuz">
+                        <barButtonItem key="backBarButtonItem" title="　" id="e1g-dP-RON"/>
+                        <barButtonItem key="rightBarButtonItem" image="logo_cart" id="OxE-pz-1Kp"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qd0-CT-QhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1286" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eSB-9M-ROY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qvi-dX-aYa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="logo_home" selectedImage="logo_home" id="muD-Du-FtJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ilz-Sq-bmK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Fqi-le-WrN" kind="relationship" relationship="rootViewController" id="a2i-bf-ftQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpN-q0-LAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="399" y="1047"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SIB-eq-bNy">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FPa-dS-jGK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Bxm-2u-0cm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Z2M-88-cMd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qvi-dX-aYa" kind="relationship" relationship="viewControllers" id="KeU-Ib-pQY"/>
+                        <segue destination="Wjv-BQ-SOb" kind="relationship" relationship="viewControllers" id="rw7-qY-PiR"/>
+                        <segue destination="ync-EF-CRG" kind="relationship" relationship="viewControllers" id="a6B-9K-6GW"/>
+                        <segue destination="3tr-NP-xAm" kind="relationship" relationship="viewControllers" id="TnP-CL-Ny6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWF-E1-Yin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="1047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_cart" width="32" height="31"/>
+        <image name="logo_heart" width="24" height="22"/>
+        <image name="logo_history" width="26" height="23"/>
+        <image name="logo_home" width="25" height="25"/>
+        <image name="logo_user" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
