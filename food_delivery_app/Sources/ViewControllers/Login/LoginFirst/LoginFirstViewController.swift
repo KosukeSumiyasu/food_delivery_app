@@ -23,15 +23,15 @@ class LoginFirstViewController: UIViewController, IndicatorInfoProvider, UITextF
     }
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         login_mail_textform1.placeholder = "email address"
         login_mail_textform1.addBorderBottom(height: 1.0, color: UIColor.lightGray)
         
         login_passward_textform1.placeholder = "Password"
         login_passward_textform1.addBorderBottom(height: 1.0, color: UIColor.lightGray)
-        super.viewDidLoad()
         login_mail_textform1.delegate = self
         login_passward_textform1.delegate = self
+        setDismissKeyboard()
     }
 
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
@@ -47,6 +47,7 @@ class LoginFirstViewController: UIViewController, IndicatorInfoProvider, UITextF
         textField.resignFirstResponder()
         return true
     }
+    
 }
 
 extension LoginFirstViewController: StoryboardInstantiable {}

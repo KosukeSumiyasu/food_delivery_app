@@ -25,6 +25,7 @@ class LoginSecondViewController: UIViewController, IndicatorInfoProvider, UIText
         super.viewDidLoad()
         login_mail_textform2.delegate = self
         login_passward_textform2.delegate = self
+        setDismissKeyboard()
     }
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
         return itemInfo

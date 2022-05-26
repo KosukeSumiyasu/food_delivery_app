@@ -22,8 +22,6 @@ class ProfileViewController: UIViewController {
         
         mail_label.addBorderBottom(height: 0.5, color: UIColor.lightGray)
         phone_label.addBorderBottom(height: 0.5, color: UIColor.lightGray)
-        
-
 
     }
 }

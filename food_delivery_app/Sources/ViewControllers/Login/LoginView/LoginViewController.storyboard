@@ -12,28 +12,33 @@
         <scene sceneID="rwx-rv-yMK">
             <objects>
                 <viewController id="hte-MQ-aL3" customClass="LoginViewController" customModule="food_delivery_app" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jWu-fL-OzC">
+                    <view key="view" contentMode="scaleAspectFit" id="jWu-fL-OzC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_title" translatesAutoresizingMaskIntoConstraints="NO" id="bn0-H9-2f8">
-                                <rect key="frame" x="132" y="124" width="150" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bn0-H9-2f8" secondAttribute="height" multiplier="1:1" id="7ub-6w-HyT"/>
-                                    <constraint firstAttribute="width" constant="150" id="hHa-0g-kNN"/>
-                                </constraints>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qij-la-Nni">
-                                <rect key="frame" x="0.0" y="305" width="414" height="591"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="QF3-GY-Bax"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="rE3-Hd-8rJ"/>
-                            </scrollView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-37-Pee" customClass="ButtonBarView" customModule="XLPagerTabStrip">
-                                <rect key="frame" x="0.0" y="286" width="414" height="44"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUM-DD-72Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="340"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_title" translatesAutoresizingMaskIntoConstraints="NO" id="bn0-H9-2f8">
+                                        <rect key="frame" x="132" y="128" width="150" height="163"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bn0-H9-2f8" secondAttribute="height" multiplier="150:163" id="bvu-Z3-LaD"/>
+                                            <constraint firstAttribute="width" constant="150" id="hHa-0g-kNN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Zcv-pS-69c"/>
+                                    <constraint firstAttribute="height" constant="340" id="R8n-Nm-xfi"/>
+                                    <constraint firstItem="bn0-H9-2f8" firstAttribute="centerX" secondItem="HUM-DD-72Z" secondAttribute="centerX" id="Wep-bs-rHw"/>
+                                    <constraint firstItem="bn0-H9-2f8" firstAttribute="top" secondItem="HUM-DD-72Z" secondAttribute="top" constant="128" id="zWs-11-Mql"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-37-Pee" customClass="ButtonBarView" customModule="XLPagerTabStrip">
+                                <rect key="frame" x="0.0" y="340" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eh9-iX-5IT"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hbM-kI-3kS">
                                     <size key="itemSize" width="128" height="128"/>
@@ -51,15 +56,37 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFW-y1-W7P">
+                                <rect key="frame" x="0.0" y="384" width="414" height="512"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qij-la-Nni">
+                                        <rect key="frame" x="0.0" y="8" width="414" height="481"/>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="QF3-GY-Bax"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="rE3-Hd-8rJ"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qij-la-Nni" secondAttribute="bottom" id="2KD-66-AyL"/>
+                                    <constraint firstAttribute="trailing" secondItem="qij-la-Nni" secondAttribute="trailing" id="Fzz-gM-giE"/>
+                                    <constraint firstItem="qij-la-Nni" firstAttribute="leading" secondItem="eFW-y1-W7P" secondAttribute="leading" id="Ou7-vZ-LWs"/>
+                                    <constraint firstItem="qij-la-Nni" firstAttribute="top" secondItem="eFW-y1-W7P" secondAttribute="top" id="QeJ-eb-tIv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ti4-dd-zcP"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bn0-H9-2f8" firstAttribute="centerX" secondItem="jWu-fL-OzC" secondAttribute="centerX" id="3kY-f8-qSf"/>
-                            <constraint firstItem="vxJ-37-Pee" firstAttribute="leading" secondItem="ti4-dd-zcP" secondAttribute="leading" id="7e4-rc-4N7"/>
-                            <constraint firstItem="vxJ-37-Pee" firstAttribute="top" secondItem="bn0-H9-2f8" secondAttribute="bottom" constant="12" id="BAz-jV-woT"/>
-                            <constraint firstItem="bn0-H9-2f8" firstAttribute="top" secondItem="ti4-dd-zcP" secondAttribute="top" constant="80" id="OuZ-F6-aQy"/>
-                            <constraint firstItem="vxJ-37-Pee" firstAttribute="trailing" secondItem="ti4-dd-zcP" secondAttribute="trailing" id="yxE-A4-uB6"/>
+                            <constraint firstItem="eFW-y1-W7P" firstAttribute="top" secondItem="vxJ-37-Pee" secondAttribute="bottom" id="7fq-PI-9u3"/>
+                            <constraint firstItem="vxJ-37-Pee" firstAttribute="trailing" secondItem="ti4-dd-zcP" secondAttribute="trailing" id="8Jl-IZ-dkW"/>
+                            <constraint firstItem="ti4-dd-zcP" firstAttribute="trailing" secondItem="HUM-DD-72Z" secondAttribute="trailing" id="H11-LH-1Ia"/>
+                            <constraint firstItem="HUM-DD-72Z" firstAttribute="leading" secondItem="ti4-dd-zcP" secondAttribute="leading" id="MTI-w9-y3m"/>
+                            <constraint firstItem="eFW-y1-W7P" firstAttribute="leading" secondItem="ti4-dd-zcP" secondAttribute="leading" id="Rxv-V4-K6R"/>
+                            <constraint firstItem="vxJ-37-Pee" firstAttribute="top" secondItem="HUM-DD-72Z" secondAttribute="bottom" id="UGd-b2-to1"/>
+                            <constraint firstItem="vxJ-37-Pee" firstAttribute="leading" secondItem="ti4-dd-zcP" secondAttribute="leading" id="aHf-tR-CMm"/>
+                            <constraint firstItem="ti4-dd-zcP" firstAttribute="trailing" secondItem="eFW-y1-W7P" secondAttribute="trailing" id="dlm-Tb-qVm"/>
+                            <constraint firstItem="HUM-DD-72Z" firstAttribute="top" secondItem="jWu-fL-OzC" secondAttribute="top" id="wfo-2W-Cth"/>
+                            <constraint firstAttribute="bottom" secondItem="eFW-y1-W7P" secondAttribute="bottom" id="wgY-Ef-9EP"/>
                         </constraints>
                     </view>
                     <connections>

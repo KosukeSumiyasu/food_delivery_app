@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +14,77 @@
                     <view key="view" contentMode="scaleToFill" id="aw2-3a-T8b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="home_collectionView" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iNK-PI-1mT">
+                                <rect key="frame" x="0.0" y="444" width="414" height="321"/>
+                                <color key="backgroundColor" red="0.94901961089999998" green="0.94901973009999996" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="321" id="r2Q-6P-6Xe"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VLV-QT-QI9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eoU-RY-KSA" id="OlW-e7-yZy"/>
+                                    <outlet property="delegate" destination="eoU-RY-KSA" id="v18-et-DeU"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR6-rq-m8T">
+                                <rect key="frame" x="50" y="131" width="188" height="81.5"/>
+                                <string key="text">Delicious
+food for you</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEO-3U-fWL">
+                                <rect key="frame" x="50" y="240.5" width="314" height="60"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="DtH-xG-RNg">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spq-le-XOG">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="60"/>
+                                        <connections>
+                                            <action selector="tappedFoodSearchButton:" destination="eoU-RY-KSA" eventType="touchUpInside" id="jWh-35-h3N"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Spq-le-XOG" firstAttribute="leading" secondItem="sEO-3U-fWL" secondAttribute="leading" id="50m-rm-wry"/>
+                                    <constraint firstItem="DtH-xG-RNg" firstAttribute="top" secondItem="sEO-3U-fWL" secondAttribute="top" id="93v-R3-X5b"/>
+                                    <constraint firstItem="Spq-le-XOG" firstAttribute="top" secondItem="sEO-3U-fWL" secondAttribute="top" id="Fqz-4e-mkO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Spq-le-XOG" secondAttribute="trailing" id="UY9-hT-8Ad"/>
+                                    <constraint firstAttribute="trailing" secondItem="DtH-xG-RNg" secondAttribute="trailing" id="jdo-P2-Raq"/>
+                                    <constraint firstAttribute="height" constant="60" id="oX9-fa-ngy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Spq-le-XOG" secondAttribute="bottom" id="tTf-pH-cHI"/>
+                                    <constraint firstItem="DtH-xG-RNg" firstAttribute="leading" secondItem="sEO-3U-fWL" secondAttribute="leading" id="zBr-FL-g0I"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lcw-xS-SAX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.94901973009999996" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="iNK-PI-1mT" firstAttribute="top" secondItem="Lcw-xS-SAX" secondAttribute="top" constant="356" id="0HI-hS-FCQ"/>
+                            <constraint firstItem="sEO-3U-fWL" firstAttribute="top" secondItem="hR6-rq-m8T" secondAttribute="bottom" constant="28" id="ByK-Us-gkV"/>
+                            <constraint firstItem="Lcw-xS-SAX" firstAttribute="trailing" secondItem="sEO-3U-fWL" secondAttribute="trailing" constant="50" id="TAR-I9-pMH"/>
+                            <constraint firstItem="iNK-PI-1mT" firstAttribute="leading" secondItem="Lcw-xS-SAX" secondAttribute="leading" id="Zhl-9E-Jaj"/>
+                            <constraint firstItem="iNK-PI-1mT" firstAttribute="centerX" secondItem="aw2-3a-T8b" secondAttribute="centerX" id="bY4-4O-laE"/>
+                            <constraint firstItem="sEO-3U-fWL" firstAttribute="leading" secondItem="Lcw-xS-SAX" secondAttribute="leading" constant="50" id="crc-zQ-Qo8"/>
+                            <constraint firstItem="hR6-rq-m8T" firstAttribute="leading" secondItem="Lcw-xS-SAX" secondAttribute="leading" constant="50" id="npb-5M-vhr"/>
+                            <constraint firstItem="hR6-rq-m8T" firstAttribute="top" secondItem="Lcw-xS-SAX" secondAttribute="top" constant="43" id="sHO-Y1-Vy1"/>
+                            <constraint firstItem="Lcw-xS-SAX" firstAttribute="trailing" secondItem="iNK-PI-1mT" secondAttribute="trailing" id="uJD-5E-tpI"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="logo_home" id="DgR-yg-iPe"/>
                     <navigationItem key="navigationItem" id="NbT-db-jUS">
@@ -29,6 +97,11 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="FoodSearchButton" destination="Spq-le-XOG" id="Bga-7n-6o8"/>
+                        <outlet property="foodSearchBar" destination="DtH-xG-RNg" id="c6c-hB-ofj"/>
+                        <outlet property="homeCollectionView" destination="iNK-PI-1mT" id="uBM-4T-gH1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pj-rn-p0n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -39,8 +112,5 @@
         <image name="logo_cart" width="32" height="31"/>
         <image name="logo_home" width="25" height="25"/>
         <image name="logo_vector" width="25" height="17"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

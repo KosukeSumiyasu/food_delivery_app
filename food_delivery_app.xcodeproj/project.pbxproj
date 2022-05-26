@@ -21,6 +21,9 @@
 		3F1A12F425BFB4C700B7D233 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1A12F325BFB4C700B7D233 /* UIColorExtensions.swift */; };
 		3F3BE2C725C0162000C68B3B /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BE2C625C0162000C68B3B /* OrderViewController.swift */; };
 		3F3BE2CB25C0162E00C68B3B /* OrderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3BE2CA25C0162E00C68B3B /* OrderViewController.storyboard */; };
+		3F772F9625D612E000D0A4BD /* UISearchBarExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772F9525D612E000D0A4BD /* UISearchBarExtentions.swift */; };
+		3F772F9B25D61EB200D0A4BD /* FoodSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F772F9A25D61EB200D0A4BD /* FoodSearchViewController.swift */; };
+		3F772F9F25D61ED700D0A4BD /* FoodSearchViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F772F9E25D61ED700D0A4BD /* FoodSearchViewController.storyboard */; };
 		3F7F83AC25BFE8CE004D56C3 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F83AB25BFE8CE004D56C3 /* MainTabBarController.swift */; };
 		3F7F83B825BFE9B7004D56C3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F83B725BFE9B7004D56C3 /* HomeViewController.swift */; };
 		3F7F83BC25BFE9D8004D56C3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F83BB25BFE9D8004D56C3 /* FavoriteViewController.swift */; };
@@ -30,6 +33,9 @@
 		3F7F83CA25BFEC26004D56C3 /* FavoriteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7F83C925BFEC26004D56C3 /* FavoriteViewController.storyboard */; };
 		3F7F83CD25BFEC86004D56C3 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7F83CC25BFEC86004D56C3 /* ProfileViewController.storyboard */; };
 		3F7F83D025BFECE5004D56C3 /* MainTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F7F83CF25BFECE5004D56C3 /* MainTabBarController.storyboard */; };
+		3F7FBEDF25D0DC3C00D4B355 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FBEDE25D0DC3C00D4B355 /* HomeCollectionViewCell.swift */; };
+		3F7FBEE525D0DD4C00D4B355 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7FBEE425D0DD4C00D4B355 /* HomeCollectionViewCell.xib */; };
+		3F7FBEEE25D1459900D4B355 /* KeyboradDismissExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FBEED25D1459900D4B355 /* KeyboradDismissExtensions.swift */; };
 		3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F81EC9F25B17366007A0BBB /* AppDelegate.swift */; };
 		3F81ECA725B17366007A0BBB /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECA525B17366007A0BBB /* Main2.storyboard */; };
 		3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F81ECA825B17366007A0BBB /* food_delivery_app.xcdatamodeld */; };
@@ -37,9 +43,14 @@
 		3F81ECAF25B1736B007A0BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F81ECAD25B1736B007A0BBB /* LaunchScreen.storyboard */; };
 		3FB7E95825BFF43200F1432C /* HistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB7E95725BFF43200F1432C /* HistoryViewController.storyboard */; };
 		3FC8380925CCDCDE0050572A /* UILabelExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8380825CCDCDE0050572A /* UILabelExtentions.swift */; };
+		3FCD12BA25D64828006F95FE /* FoodSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD12B925D64828006F95FE /* FoodSearchCollectionViewCell.xib */; };
+		3FCD12BD25D64856006F95FE /* FoodSerachCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD12BC25D64856006F95FE /* FoodSerachCollectionViewCell.swift */; };
+		3FCD12C025D6516F006F95FE /* FoodSearchHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD12BF25D6516F006F95FE /* FoodSearchHeaderCollectionReusableView.swift */; };
 		3FD406B725BFCE5900B94F05 /* LoginFirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD406B625BFCE5900B94F05 /* LoginFirstViewController.storyboard */; };
 		3FD406BA25BFCE7400B94F05 /* LoginSecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD406B925BFCE7400B94F05 /* LoginSecondViewController.storyboard */; };
 		3FD406BD25BFCE8400B94F05 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD406BC25BFCE8400B94F05 /* LoginViewController.storyboard */; };
+		3FE71FF325CD538D0012CBF5 /* UInavigationbarExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE71FF225CD538D0012CBF5 /* UInavigationbarExtention.swift */; };
+		3FF8E59025CD0E0300A86B56 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF8E58F25CD0E0300A86B56 /* test.storyboard */; };
 		693113DCF68956A8DD2A7C28 /* Pods_food_delivery_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9303364ADE115C321649B6A8 /* Pods_food_delivery_app.framework */; };
 		C3BAF10125B551330074A8AB /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BAF0FF25B551330074A8AB /* FoodCollectionViewCell.swift */; };
 		C3BAF10225B551330074A8AB /* FoodCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3BAF10025B551330074A8AB /* FoodCollectionViewCell.xib */; };
@@ -60,6 +71,9 @@
 		3F1A12F325BFB4C700B7D233 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		3F3BE2C625C0162000C68B3B /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		3F3BE2CA25C0162E00C68B3B /* OrderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderViewController.storyboard; sourceTree = "<group>"; };
+		3F772F9525D612E000D0A4BD /* UISearchBarExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtentions.swift; sourceTree = "<group>"; };
+		3F772F9A25D61EB200D0A4BD /* FoodSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchViewController.swift; sourceTree = "<group>"; };
+		3F772F9E25D61ED700D0A4BD /* FoodSearchViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FoodSearchViewController.storyboard; sourceTree = "<group>"; };
 		3F7F83AB25BFE8CE004D56C3 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3F7F83B725BFE9B7004D56C3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F7F83BB25BFE9D8004D56C3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +83,9 @@
 		3F7F83C925BFEC26004D56C3 /* FavoriteViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FavoriteViewController.storyboard; sourceTree = "<group>"; };
 		3F7F83CC25BFEC86004D56C3 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		3F7F83CF25BFECE5004D56C3 /* MainTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabBarController.storyboard; sourceTree = "<group>"; };
+		3F7FBEDE25D0DC3C00D4B355 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3F7FBEE425D0DD4C00D4B355 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3F7FBEED25D1459900D4B355 /* KeyboradDismissExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboradDismissExtensions.swift; sourceTree = "<group>"; };
 		3F81EC9C25B17366007A0BBB /* food_delivery_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = food_delivery_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F81EC9F25B17366007A0BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F81ECA625B17366007A0BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
@@ -78,9 +95,14 @@
 		3F81ECB025B1736B007A0BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB7E95725BFF43200F1432C /* HistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryViewController.storyboard; sourceTree = "<group>"; };
 		3FC8380825CCDCDE0050572A /* UILabelExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtentions.swift; sourceTree = "<group>"; };
+		3FCD12B925D64828006F95FE /* FoodSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		3FCD12BC25D64856006F95FE /* FoodSerachCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSerachCollectionViewCell.swift; sourceTree = "<group>"; };
+		3FCD12BF25D6516F006F95FE /* FoodSearchHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		3FD406B625BFCE5900B94F05 /* LoginFirstViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginFirstViewController.storyboard; sourceTree = "<group>"; };
 		3FD406B925BFCE7400B94F05 /* LoginSecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginSecondViewController.storyboard; sourceTree = "<group>"; };
 		3FD406BC25BFCE8400B94F05 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		3FE71FF225CD538D0012CBF5 /* UInavigationbarExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInavigationbarExtention.swift; sourceTree = "<group>"; };
+		3FF8E58F25CD0E0300A86B56 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		70FD5C5F0613CE2ADBC73515 /* Pods-food_delivery_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.debug.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.debug.xcconfig"; sourceTree = "<group>"; };
 		9303364ADE115C321649B6A8 /* Pods_food_delivery_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_food_delivery_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F4EE7EF30F7EBDCC0043FA5 /* Pods-food_delivery_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-food_delivery_app.release.xcconfig"; path = "Target Support Files/Pods-food_delivery_app/Pods-food_delivery_app.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +138,9 @@
 				3F1A12F025BFB4A500B7D233 /* UITextFieldExtensions.swift */,
 				3F1A12F325BFB4C700B7D233 /* UIColorExtensions.swift */,
 				3FC8380825CCDCDE0050572A /* UILabelExtentions.swift */,
+				3FE71FF225CD538D0012CBF5 /* UInavigationbarExtention.swift */,
+				3F7FBEED25D1459900D4B355 /* KeyboradDismissExtensions.swift */,
+				3F772F9525D612E000D0A4BD /* UISearchBarExtentions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -142,6 +167,7 @@
 		3F1A12E525BFB2A600B7D233 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F772F8D25D60AC000D0A4BD /* FoodSerach */,
 				3F1A12E825BFB2FA00B7D233 /* FoodInfo */,
 				3F3BE2C525C015F600C68B3B /* OrderViewController */,
 				3F7F83A925BFE7A1004D56C3 /* Main */,
@@ -176,6 +202,16 @@
 				3F3BE2CA25C0162E00C68B3B /* OrderViewController.storyboard */,
 			);
 			path = OrderViewController;
+			sourceTree = "<group>";
+		};
+		3F772F8D25D60AC000D0A4BD /* FoodSerach */ = {
+			isa = PBXGroup;
+			children = (
+				3F772F9E25D61ED700D0A4BD /* FoodSearchViewController.storyboard */,
+				3F772F9A25D61EB200D0A4BD /* FoodSearchViewController.swift */,
+				3FCD12BF25D6516F006F95FE /* FoodSearchHeaderCollectionReusableView.swift */,
+			);
+			path = FoodSerach;
 			sourceTree = "<group>";
 		};
 		3F7F83A925BFE7A1004D56C3 /* Main */ = {
@@ -222,6 +258,7 @@
 			children = (
 				3F7F83BE25BFE9E7004D56C3 /* ProfileViewController.swift */,
 				3F7F83CC25BFEC86004D56C3 /* ProfileViewController.storyboard */,
+				3FF8E58F25CD0E0300A86B56 /* test.storyboard */,
 			);
 			path = ProfileViewController;
 			sourceTree = "<group>";
@@ -310,6 +347,10 @@
 			children = (
 				C3BAF0FF25B551330074A8AB /* FoodCollectionViewCell.swift */,
 				C3BAF10025B551330074A8AB /* FoodCollectionViewCell.xib */,
+				3F7FBEDE25D0DC3C00D4B355 /* HomeCollectionViewCell.swift */,
+				3F7FBEE425D0DD4C00D4B355 /* HomeCollectionViewCell.xib */,
+				3FCD12B925D64828006F95FE /* FoodSearchCollectionViewCell.xib */,
+				3FCD12BC25D64856006F95FE /* FoodSerachCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,12 +414,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F772F9F25D61ED700D0A4BD /* FoodSearchViewController.storyboard in Resources */,
+				3F7FBEE525D0DD4C00D4B355 /* HomeCollectionViewCell.xib in Resources */,
 				3F3BE2CB25C0162E00C68B3B /* OrderViewController.storyboard in Resources */,
 				3F1A12EA25BFB32300B7D233 /* FoodInfoViewController.storyboard in Resources */,
 				3F7F83CA25BFEC26004D56C3 /* FavoriteViewController.storyboard in Resources */,
 				3F81ECAF25B1736B007A0BBB /* LaunchScreen.storyboard in Resources */,
 				3FB7E95825BFF43200F1432C /* HistoryViewController.storyboard in Resources */,
 				3F7F83D025BFECE5004D56C3 /* MainTabBarController.storyboard in Resources */,
+				3FCD12BA25D64828006F95FE /* FoodSearchCollectionViewCell.xib in Resources */,
 				3FD406BA25BFCE7400B94F05 /* LoginSecondViewController.storyboard in Resources */,
 				3FD406B725BFCE5900B94F05 /* LoginFirstViewController.storyboard in Resources */,
 				3F81ECAC25B1736B007A0BBB /* Assets.xcassets in Resources */,
@@ -386,6 +430,7 @@
 				3FD406BD25BFCE8400B94F05 /* LoginViewController.storyboard in Resources */,
 				C3BAF10225B551330074A8AB /* FoodCollectionViewCell.xib in Resources */,
 				3F7F83CD25BFEC86004D56C3 /* ProfileViewController.storyboard in Resources */,
+				3FF8E59025CD0E0300A86B56 /* test.storyboard in Resources */,
 				3F81ECA725B17366007A0BBB /* Main2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,17 +486,24 @@
 			files = (
 				3F1A12D925BFAC4800B7D233 /* NavigationBarController.swift in Sources */,
 				3F1A12A525B1B3B000B7D233 /* LoginFirstViewController.swift in Sources */,
+				3F7FBEDF25D0DC3C00D4B355 /* HomeCollectionViewCell.swift in Sources */,
 				3F7F83AC25BFE8CE004D56C3 /* MainTabBarController.swift in Sources */,
 				C3BAF10125B551330074A8AB /* FoodCollectionViewCell.swift in Sources */,
 				3F1A12CF25B6C39F00B7D233 /* home.swift in Sources */,
 				3F81ECAA25B17366007A0BBB /* food_delivery_app.xcdatamodeld in Sources */,
 				3F7F83BF25BFE9E7004D56C3 /* ProfileViewController.swift in Sources */,
+				3FCD12C025D6516F006F95FE /* FoodSearchHeaderCollectionReusableView.swift in Sources */,
+				3FCD12BD25D64856006F95FE /* FoodSerachCollectionViewCell.swift in Sources */,
+				3F772F9B25D61EB200D0A4BD /* FoodSearchViewController.swift in Sources */,
 				3F1A12F125BFB4A500B7D233 /* UITextFieldExtensions.swift in Sources */,
+				3FE71FF325CD538D0012CBF5 /* UInavigationbarExtention.swift in Sources */,
 				3F1A12D525B6E21700B7D233 /* UIViewExtentions.swift in Sources */,
 				3F81ECA025B17366007A0BBB /* AppDelegate.swift in Sources */,
 				3F1A12B125B528CF00B7D233 /* FoodInfoViewController.swift in Sources */,
+				3F772F9625D612E000D0A4BD /* UISearchBarExtentions.swift in Sources */,
 				3F3BE2C725C0162000C68B3B /* OrderViewController.swift in Sources */,
 				3F1A12F425BFB4C700B7D233 /* UIColorExtensions.swift in Sources */,
+				3F7FBEEE25D1459900D4B355 /* KeyboradDismissExtensions.swift in Sources */,
 				3F7F83B825BFE9B7004D56C3 /* HomeViewController.swift in Sources */,
 				3FC8380925CCDCDE0050572A /* UILabelExtentions.swift in Sources */,
 				3F7F83BC25BFE9D8004D56C3 /* FavoriteViewController.swift in Sources */,

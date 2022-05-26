@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="food_collectionView" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ooU-3v-g4K">
-                                <rect key="frame" x="87" y="168" width="240" height="240"/>
+                                <rect key="frame" x="87" y="98" width="240" height="240"/>
                                 <color key="backgroundColor" red="0.56858557460000003" green="0.56866812710000003" blue="0.56855958699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="pAI-oN-Tbt"/>
@@ -38,7 +38,7 @@
                                 </connections>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="oJf-bD-Azy">
-                                <rect key="frame" x="53" y="514" width="297" height="388"/>
+                                <rect key="frame" x="53" y="418" width="297" height="388"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9Zq-z1-4Ju">
                                         <rect key="frame" x="0.0" y="0.0" width="297" height="286"/>
@@ -124,7 +124,7 @@
                                 </subviews>
                             </stackView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Wjd-DX-bp5">
-                                <rect key="frame" x="146" y="444" width="122.5" height="27.5"/>
+                                <rect key="frame" x="146" y="374" width="122.5" height="27.5"/>
                                 <color key="pageIndicatorTintColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.98039215690000003" green="0.2901960784" blue="0.047058823530000002" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             </pageControl>
@@ -135,10 +135,10 @@
                             <constraint firstItem="Wjd-DX-bp5" firstAttribute="centerX" secondItem="A9N-v2-qI5" secondAttribute="centerX" id="35y-Dw-GXm"/>
                             <constraint firstItem="VRi-c0-szd" firstAttribute="trailing" secondItem="oJf-bD-Azy" secondAttribute="trailing" constant="64" id="4C1-ii-cdn"/>
                             <constraint firstItem="ooU-3v-g4K" firstAttribute="centerX" secondItem="A9N-v2-qI5" secondAttribute="centerX" id="4Dc-O9-ARG"/>
-                            <constraint firstItem="oJf-bD-Azy" firstAttribute="top" secondItem="VRi-c0-szd" secondAttribute="top" constant="426" id="CJZ-rG-Ttb"/>
+                            <constraint firstItem="oJf-bD-Azy" firstAttribute="top" secondItem="ooU-3v-g4K" secondAttribute="bottom" constant="80" id="CJZ-rG-Ttb"/>
                             <constraint firstItem="oJf-bD-Azy" firstAttribute="leading" secondItem="VRi-c0-szd" secondAttribute="leading" constant="53" id="Kwv-fS-Qtl"/>
                             <constraint firstItem="Wjd-DX-bp5" firstAttribute="top" secondItem="ooU-3v-g4K" secondAttribute="bottom" constant="36" id="L61-do-nKy"/>
-                            <constraint firstItem="ooU-3v-g4K" firstAttribute="top" secondItem="VRi-c0-szd" secondAttribute="top" constant="80" id="gvr-gd-TGp"/>
+                            <constraint firstItem="ooU-3v-g4K" firstAttribute="top" secondItem="VRi-c0-szd" secondAttribute="top" constant="10" id="gvr-gd-TGp"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

@@ -24,6 +24,10 @@ class MainTabBarController: UITabBarController {
         let fourthViewController = HistoryViewController.instantiate()
         
         UITabBar.appearance().tintColor = UIColor(red:250.0/255.0,green: 74.0/255.0,blue: 12.0/255.0, alpha: 1)
+        // 背景の透過
+        UITabBar.appearance().backgroundImage = UIImage()
+        // 境界線の透過
+        UITabBar.appearance().shadowImage = UIImage()
         
         // ③ 各インスタンスのViewControllerに対して、アイコンなどのTabBarItemを設定
         firstViewController.tabBarItem.selectedImage = UIImage(named: "logo_home.svg")
@@ -42,6 +46,14 @@ class MainTabBarController: UITabBarController {
         
 
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.enableTransparency()
+    }
+    
+
+
 }
 extension MainTabBarController: StoryboardInstantiable {}
 
